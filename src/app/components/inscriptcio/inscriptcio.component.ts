@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class InscriptcioComponent {
 
+  DNI!:string;
+  Codidelfederat!:string;
+  NomiCognoms!:string;
+  Telèfon!:string;
+  Email!:string;
+
 }
