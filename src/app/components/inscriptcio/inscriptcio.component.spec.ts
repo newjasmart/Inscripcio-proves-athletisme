@@ -52,5 +52,12 @@ describe('InscriptcioComponent', () => {
    
   });
   
-  
+  it('Has title Inscripcio,100 llisos, 200 llisos,400 llisos,800 llisos,1000 llisos', () => {
+    expect(compiled.querySelector("h1")?.textContent).toBe("Inscriptcio ");
+    expect(getNthLabel(5).textContent).toBe("100 llisos: ");
+    expect(getNthLabel(6).textContent).toBe("200 llisos: ");
+    expect(getNthLabel(7).textContent).toBe("400 llisos: ");
+    expect(getNthLabel(8).textContent).toBe("800 llisos: ");
+    expect(getNthLabel(9).textContent).toBe("1000 llisos: ");
+  });
 });
