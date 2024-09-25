@@ -47,17 +47,17 @@ describe('InscriptcioComponent', () => {
     expect(getInputFromLabel(0)!.type).toBe("text");
     expect(getInputFromLabel(1)!.type).toBe("text");
     expect(getInputFromLabel(2)!.type).toBe("text");
-    expect(getInputFromLabel(3)!.type).toBe("text");
+    expect(getInputFromLabel(3)!.type).toBe("tel");
     expect(getInputFromLabel(4)!.type).toBe("email");
    
   });
   
-  it('Has title Inscripcio,100 llisos, 200 llisos,400 llisos,800 llisos,1000 llisos', () => {
-    expect(compiled.querySelector("h1")?.textContent).toBe("Inscriptcio ");
-    expect(getNthLabel(5).textContent).toBe("100 llisos: ");
-    expect(getNthLabel(6).textContent).toBe("200 llisos: ");
-    expect(getNthLabel(7).textContent).toBe("400 llisos: ");
-    expect(getNthLabel(8).textContent).toBe("800 llisos: ");
-    expect(getNthLabel(9).textContent).toBe("1000 llisos: ");
+  it('Has title Inscripcio,100 llisos,200 llisos,400 llisos,800 llisos,1000 llisos', () => {
+    expect(compiled.querySelector("h1")?.textContent).toBe("Inscriptcio proves athletisme");
+    expect(getNthLabel(5).textContent).toBe("100 llisos:");
+    expect(getNthLabel(6).textContent).toBe("200 llisos:");
+    expect(getNthLabel(7).textContent).toBe("400 llisos:");
+    expect(getNthLabel(8).textContent).toBe("800 llisos:");
+    expect(getNthLabel(9).textContent).toBe("1000 llisos:");
   });
 });
