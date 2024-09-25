@@ -6,13 +6,13 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './inscriptcio.component.html',
-  styleUrl: './inscriptcio.component.css'
+  styleUrls: ['./inscriptcio.component.css']
 })
 export class InscriptcioComponent {
 
   DNI!:string;
-  Codidelfederat!:string;
-  NomiCognoms!:string;
+  Codidefederat!:string;
+  Nomicognoms!:string;
   Telefon!:string;
   Email!:string;
 
